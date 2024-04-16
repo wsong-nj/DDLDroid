@@ -1,0 +1,7 @@
+apktool_2.5.0.jar
+soot-4.2.1-jar-with-dependencies.jar,
+soot-infoflow-2.9.0.jar,
+soot-infoflow-android-2.9.0.jar
+trove4j-3.0.3.jar
+
+if run error at Scene.v().loadNecessaryClasses(); , delete and re-add these jar manually.

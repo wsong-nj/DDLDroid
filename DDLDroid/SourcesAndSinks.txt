@@ -1,0 +1,307 @@
+% 数据读取的来源 定义为source
+% SharedPreferences Getter
+<android.content.SharedPreferences: java.util.Map getAll()> -> _SOURCE_
+<android.content.SharedPreferences: boolean getBoolean(java.lang.String,boolean)> -> _SOURCE_
+<android.content.SharedPreferences: int getInt(java.lang.String,int)> -> _SOURCE_
+<android.content.SharedPreferences: float getFloat(java.lang.String,float)> -> _SOURCE_
+<android.content.SharedPreferences: long getLong(java.lang.String,long)> -> _SOURCE_
+<android.content.SharedPreferences: java.lang.String getString(java.lang.String,java.lang.String)> -> _SOURCE_
+<android.content.SharedPreferences: java.util.Set getStringSet(java.lang.String,java.util.Set)> -> _SOURCE_
+
+% android.os.Bundle  GETTER
+% do not consider them as sources, because we have the callback parameters from which the apps obtain the bundles as sources anyway
+<android.os.Bundle: java.lang.Object get(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: android.os.IBinder getBinder(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: android.os.Bundle getBundle(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: boolean getBoolean(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)> -> _SOURCE_
+<android.os.Bundle: boolean[] getBooleanArray(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: byte getByte(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: java.lang.Byte getByte(java.lang.String,byte)> -> _SOURCE_
+<android.os.Bundle: byte[] getByteArray(java.lang.String)> -> _SOURCE_
+%<java.lang.Object: java.lang.Class getClass()>() -> _SOURCE_
+<android.os.Bundle: java.lang.ClassLoader getClassLoader()>() -> _SOURCE_
+<android.os.Bundle: char getChar(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: char getChar(java.lang.String,char)> -> _SOURCE_
+<android.os.Bundle: char[] getCharArray(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: java.lang.CharSequence getCharSequence(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: java.lang.CharSequence getCharSequence(java.lang.String,java.lang.CharSequence)> -> _SOURCE_
+<android.os.Bundle: java.lang.CharSequence[] getCharSequenceArray(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: java.util.ArrayList getCharSequenceArrayList(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: double getDouble(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: double getDouble(java.lang.String,double)> -> _SOURCE_
+<android.os.Bundle: double[] getDoubleArray(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: float getFloat(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: float getFloat(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: float[] getFloatArray(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: int getInt(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: int getInt(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: int[] getIntArray(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: java.util.ArrayList getIntegerArrayList(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: long getLong(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: long getLong(java.lang.String,long)> -> _SOURCE_
+<android.os.Bundle: long[] getLongArray(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: android.os.Parcelable getParcelable(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: android.os.Parcelable[] getParcelableArray(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: java.util.ArrayList getParcelableArrayList(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: java.io.Serializable getSerializable(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: android.util.SparseArray getSparseParcelableArray(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: short getShort(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: short getShort(java.lang.String,short)> -> _SOURCE_
+<android.os.Bundle: short[] getShortArray(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: android.util.Size getSize(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: android.util.SizeF getSizeF(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: java.lang.String getString(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: java.lang.String getString(java.lang.String,java.lang.String)> -> _SOURCE_
+<android.os.Bundle: java.lang.String[] getStringArray(java.lang.String)> -> _SOURCE_
+<android.os.Bundle: java.util.ArrayList getStringArrayList(java.lang.String)> -> _SOURCE_
+
+% SQLiteDatabase GETTER
+<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String)> -> _SOURCE_
+<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)> -> _SOURCE_
+<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(boolean,java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,android.os.CancellationSignal)> -> _SOURCE_
+<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(boolean,java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String)> -> _SOURCE_
+<android.database.sqlite.SQLiteDatabase: android.database.Cursor queryWithFactory(android.database.sqlite.SQLiteDatabase$CursorFactory,boolean,java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String)> -> _SOURCE_
+<android.database.sqlite.SQLiteDatabase: android.database.Cursor queryWithFactory(android.database.sqlite.SQLiteDatabase$CursorFactory,boolean,java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,android.os.CancellationSignal)> -> _SOURCE_
+<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])> -> _SOURCE_
+<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[],android.os.CancellationSignal)> -> _SOURCE_
+<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQueryWithFactory(android.database.sqlite.SQLiteDatabase$CursorFactory,java.lang.String,java.lang.String[],java.lang.String)> -> _SOURCE_
+<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQueryWithFactory(android.database.sqlite.SQLiteDatabase$CursorFactory,java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)> -> _SOURCE_
+
+% IntputStream READ
+<java.io.BufferedInputStream: int read()> -> _SOURCE_
+% <java.io.BufferedInputStream: int read(byte[])> -> _SOURCE_
+% <java.io.BufferedInputStream: int read(byte[],int,int)> -> _SOURCE_
+<java.io.DataInputStream: int read()> -> _SOURCE_
+% <java.io.DataInputStream: int read(byte[])> -> _SOURCE_
+% <java.io.DataInputStream: int read(byte[],int,int)> -> _SOURCE_
+<java.io.DataInputStream: boolean readBoolean()> -> _SOURCE_
+<java.io.DataInputStream: byte readByte()> -> _SOURCE_
+<java.io.DataInputStream: char readChar()> -> _SOURCE_
+<java.io.DataInputStream: double readDouble()> -> _SOURCE_
+<java.io.DataInputStream: float readFloat()> -> _SOURCE_
+% <java.io.DataInputStream: void readFully(byte[])> -> _SOURCE_
+% <java.io.DataInputStream: void readFully(byte[],int,int)> -> _SOURCE_
+<java.io.DataInputStream: int readInt()> -> _SOURCE_
+<java.io.DataInputStream: long readLong()> -> _SOURCE_
+<java.io.DataInputStream: short readShort()> -> _SOURCE_
+<java.io.DataInputStream: int readUnsignedByte()> -> _SOURCE_
+<java.io.DataInputStream: int readUnsignedShort()> -> _SOURCE_
+<java.io.DataInputStream: java.lang.String readUTF()> -> _SOURCE_
+<java.io.FileInputStream: int read()> -> _SOURCE_
+% <java.io.FileInputStream: int read(byte[])> -> _SOURCE_
+% <java.io.FileInputStream: int read(byte[],int,int)> -> _SOURCE_
+<java.io.ByteArrayInputStream: int read()> -> _SOURCE_
+% <java.io.ByteArrayInputStream: int read(byte[])> -> _SOURCE_
+% <java.io.ByteArrayInputStream: int read(byte[],int,int)> -> _SOURCE_
+<java.io.ObjectInputStream: int read()> -> _SOURCE_
+% <java.io.ObjectInputStream: int read(byte[])> -> _SOURCE_
+% <java.io.ObjectInputStream: int read(byte[],int,int)> -> _SOURCE_
+<java.io.ObjectInputStream: boolean readBoolean()> -> _SOURCE_
+<java.io.ObjectInputStream: byte readByte()> -> _SOURCE_
+<java.io.ObjectInputStream: char readChar()> -> _SOURCE_
+<java.io.ObjectInputStream: double readDouble()> -> _SOURCE_
+<java.io.ObjectInputStream: java.io.ObjectInputStream$GetField readFields()> -> _SOURCE_
+<java.io.ObjectInputStream: float readFloat()> -> _SOURCE_
+% <java.io.ObjectInputStream: void readFully(byte[])> -> _SOURCE_
+% <java.io.ObjectInputStream: void readFully(byte[],int,int)> -> _SOURCE_
+<java.io.ObjectInputStream: int readInt()> -> _SOURCE_
+<java.io.ObjectInputStream: long readLong()> -> _SOURCE_
+<java.io.ObjectInputStream: java.lang.Object readObject()> -> _SOURCE_
+<java.io.ObjectInputStream: short readShort()> -> _SOURCE_
+<java.io.ObjectInputStream: java.lang.Object readUnshared()> -> _SOURCE_
+<java.io.ObjectInputStream: int readUnsignedByte()> -> _SOURCE_
+<java.io.ObjectInputStream: int readUnsignedShort()> -> _SOURCE_
+<java.io.ObjectInputStream: java.lang.String readUTF()> -> _SOURCE_
+<java.io.PipedInputStream: int read()> -> _SOURCE_
+% <java.io.PipedInputStream: int read(byte[])> -> _SOURCE_
+% <java.io.PipedInputStream: int read(byte[],int,int)> -> _SOURCE_
+<java.io.PushbackInputStream: int read()> -> _SOURCE_
+% <java.io.PushbackInputStream: int read(byte[])> -> _SOURCE_
+% <java.io.PushbackInputStream: int read(byte[],int,int)> -> _SOURCE_
+<java.io.SequenceInputStream: int read()> -> _SOURCE_
+% <java.io.SequenceInputStream: int read(byte[])> -> _SOURCE_
+% <java.io.SequenceInputStream: int read(byte[],int,int)> -> _SOURCE_
+
+% Reader  READ
+<java.io.FileReader: int read()> -> _SOURCE_
+% <java.io.FileReader: int read(char[])> -> _SOURCE_
+% <java.io.FileReader: int read(char[],int,int)> -> _SOURCE_
+% <java.io.FileReader: int read(java.nio.CharBuffer)> -> _SOURCE_
+<java.io.BufferedReader: int read()> -> _SOURCE_
+% <java.io.BufferedReader: int read(char[])> -> _SOURCE_
+% <java.io.BufferedReader: int read(char[],int,int)> -> _SOURCE_
+% <java.io.BufferedReader: int read(java.nio.CharBuffer)> -> _SOURCE_
+<java.io.BufferedReader: java.lang.String readLine()> -> _SOURCE_
+<java.io.CharArrayReader: int read()> -> _SOURCE_
+% <java.io.CharArrayReader: int read(char[])> -> _SOURCE_
+% <java.io.CharArrayReader: int read(char[],int,int)> -> _SOURCE_
+% <java.io.CharArrayReader: int read(java.nio.CharBuffer)> -> _SOURCE_
+<java.io.FileReader: int read()> -> _SOURCE_
+% <java.io.FileReader: int read(char[])> -> _SOURCE_
+% <java.io.FileReader: int read(char[],int,int)> -> _SOURCE_
+% <java.io.FileReader: int read(java.nio.CharBuffer)> -> _SOURCE_
+<java.io.InputStreamReader: int read()> -> _SOURCE_
+% <java.io.InputStreamReader: int read(char[])> -> _SOURCE_
+% <java.io.InputStreamReader: int read(char[],int,int)> -> _SOURCE_
+% <java.io.InputStreamReader: int read(java.nio.CharBuffer)> -> _SOURCE_
+<java.io.LineNumberReader: int read()> -> _SOURCE_
+% <java.io.LineNumberReader: int read(char[])> -> _SOURCE_
+% <java.io.LineNumberReader: int read(char[],int,int)> -> _SOURCE_
+% <java.io.LineNumberReader: int read(java.nio.CharBuffer)> -> _SOURCE_
+<java.io.LineNumberReader: java.lang.String readLine()> -> _SOURCE_
+<java.io.PipedReader: int read()> -> _SOURCE_
+% <java.io.PipedReader: int read(char[])> -> _SOURCE_
+% <java.io.PipedReader: int read(char[],int,int)> -> _SOURCE_
+% <java.io.PipedReader: int read(java.nio.CharBuffer)> -> _SOURCE_
+<java.io.PushbackReader: int read()> -> _SOURCE_
+% <java.io.PushbackReader: int read(char[])> -> _SOURCE_
+% <java.io.PushbackReader: int read(char[],int,int)> -> _SOURCE_
+% <java.io.PushbackReader: int read(java.nio.CharBuffer)> -> _SOURCE_
+<java.io.StringReader: int read()> -> _SOURCE_
+% <java.io.StringReader: int read(char[])> -> _SOURCE_
+% <java.io.StringReader: int read(char[],int,int)> -> _SOURCE_
+% <java.io.StringReader: int read(java.nio.CharBuffer)> -> _SOURCE_
+
+
+% 数据保存的去向 定义为sink
+% SharedPreferences$Editor  PUT
+<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)> -> _SINK_
+<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)> -> _SINK_
+<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)> -> _SINK_
+<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)> -> _SINK_
+<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)> -> _SINK_
+<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putStringSet(java.lang.String,java.util.Set)> -> _SINK_
+
+% Bundle PUT
+<android.os.Bundle: void putAll(android.os.Bundle)> -> _SINK_
+<android.os.Bundle: void putAll(android.os.PersistableBundle)> -> _SINK_
+<android.os.Bundle: void putBoolean(java.lang.String,boolean)> -> _SINK_
+<android.os.Bundle: void putBooleanArray(java.lang.String,boolean[])> -> _SINK_
+<android.os.Bundle: void putBinder(java.lang.String,android.os.IBinder)> -> _SINK_
+<android.os.Bundle: void putBundle(java.lang.String,android.os.Bundle)> -> _SINK_
+<android.os.Bundle: void putByte(java.lang.String,byte)> -> _SINK_
+<android.os.Bundle: void putByteArray(java.lang.String,byte[])> -> _SINK_
+<android.os.Bundle: void putChar(java.lang.String,char)> -> _SINK_
+<android.os.Bundle: void putCharArray(java.lang.String,char[])> -> _SINK_
+<android.os.Bundle: void putCharSequence(java.lang.String,java.lang.CharSequence)> -> _SINK_
+<android.os.Bundle: void putCharSequenceArray(java.lang.String,java.lang.CharSequence[])> -> _SINK_
+<android.os.Bundle: void putCharSequenceArrayList(java.lang.String,java.util.ArrayList)> -> _SINK_
+<android.os.Bundle: void putDouble(java.lang.String,double)> -> _SINK_
+<android.os.Bundle: void putDoubleArray(java.lang.String,double[])> -> _SINK_
+<android.os.Bundle: void putFloat(java.lang.String,float)> -> _SINK_
+<android.os.Bundle: void putFloatArray(java.lang.String,float[])> -> _SINK_
+<android.os.Bundle: void putInt(java.lang.String,int)> -> _SINK_
+<android.os.Bundle: void putIntArray(java.lang.String,int[])> -> _SINK_
+<android.os.Bundle: void putIntegerArrayList(java.lang.String,java.util.ArrayList)> -> _SINK_
+<android.os.Bundle: void putLong(java.lang.String,long)> -> _SINK_
+<android.os.Bundle: void putLongArray(java.lang.String,long[])> -> _SINK_
+<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)> -> _SINK_
+<android.os.Bundle: void putParcelableArray(java.lang.String,android.os.Parcelable[])> -> _SINK_
+<android.os.Bundle: void putParcelableArrayList(java.lang.String,java.util.ArrayList)> -> _SINK_
+<android.os.Bundle: void putSerializable(java.lang.String,java.io.Serializable)> -> _SINK_
+<android.os.Bundle: void putSize(java.lang.String,android.util.Size)> -> _SINK_
+<android.os.Bundle: void putSizeF(java.lang.String,android.util.SizeF)> -> _SINK_
+<android.os.Bundle: void putSparseParcelableArray(java.lang.String,android.util.SparseArray)> -> _SINK_
+<android.os.Bundle: void putShort(java.lang.String,short)> -> _SINK_
+<android.os.Bundle: void putShortArray(java.lang.String,short[])> -> _SINK_
+<android.os.Bundle: void putString(java.lang.String,java.lang.String)> -> _SINK_
+<android.os.Bundle: void putStringArray(java.lang.String,java.lang.String[])> -> _SINK_
+<android.os.Bundle: void putStringArrayList(java.lang.String,java.util.ArrayList)> -> _SINK_
+
+% SQLiteDatabase  INSERT UPDATE REPLACE
+<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)> -> _SINK_
+<android.database.sqlite.SQLiteDatabase: long insertOrThrow(java.lang.String,java.lang.String,android.content.ContentValues)> -> _SINK_
+<android.database.sqlite.SQLiteDatabase: long insertWithOnConflict(java.lang.String,java.lang.String,android.content.ContentValues,int)> -> _SINK_
+<android.database.sqlite.SQLiteDatabase: long replace(java.lang.String,java.lang.String,android.content.ContentValues)> -> _SINK_
+<android.database.sqlite.SQLiteDatabase: long replaceOrThrow(java.lang.String,java.lang.String,android.content.ContentValues)> -> _SINK_
+<android.database.sqlite.SQLiteDatabase: int update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])> -> _SINK_
+<android.database.sqlite.SQLiteDatabase: int updateWithOnConflict(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[],int)> -> _SINK_
+
+% OutputStream WRITE
+<java.io.FileOutputStream: void write(int)> -> _SINK_
+<java.io.FileOutputStream: void write(byte[])> -> _SINK_
+<java.io.FileOutputStream: void write(byte[],int,int)> -> _SINK_
+<java.io.BufferedOutputStream: void write(int)> -> _SINK_
+<java.io.BufferedOutputStream: void write(byte[])> -> _SINK_
+<java.io.BufferedOutputStream: void write(byte[],int,int)> -> _SINK_
+<java.io.ByteArrayOutputStream: void write(int)> -> _SINK_
+<java.io.ByteArrayOutputStream: void write(byte[])> -> _SINK_
+<java.io.ByteArrayOutputStream: void write(byte[],int,int)> -> _SINK_
+<java.io.ByteArrayOutputStream: void writeTo(java.io.OutputStream)> -> _SINK_
+<java.io.DataOutputStream: void write(int)> -> _SINK_
+<java.io.DataOutputStream: void write(byte[])> -> _SINK_
+<java.io.DataOutputStream: void write(byte[],int,int)> -> _SINK_
+<java.io.DataOutputStream: void writeBoolean(boolean)> -> _SINK_
+<java.io.DataOutputStream: void writeByte(int)> -> _SINK_
+<java.io.DataOutputStream: void writeBytes(java.lang.String)> -> _SINK_
+<java.io.DataOutputStream: void writeChar(int)> -> _SINK_
+<java.io.DataOutputStream: void writeChars(java.lang.String)> -> _SINK_
+<java.io.DataOutputStream: void writeDouble(double)> -> _SINK_
+<java.io.DataOutputStream: void writeFloat(float)> -> _SINK_
+<java.io.DataOutputStream: void writeInt(int)> -> _SINK_
+<java.io.DataOutputStream: void writeLong(long)> -> _SINK_
+<java.io.DataOutputStream: void writeShort(int)> -> _SINK_
+<java.io.DataOutputStream: void writeUTF(java.lang.String)> -> _SINK_
+<java.io.FilterOutputStream: void write(int)> -> _SINK_
+<java.io.FilterOutputStream: void write(byte[])> -> _SINK_
+<java.io.FilterOutputStream: void write(byte[],int,int)> -> _SINK_
+<java.io.ObjectOutputStream: void write(int)> -> _SINK_
+<java.io.ObjectOutputStream: void write(byte[])> -> _SINK_
+<java.io.ObjectOutputStream: void write(byte[],int,int)> -> _SINK_
+<java.io.ObjectOutputStream: void writeBoolean(boolean)> -> _SINK_
+<java.io.ObjectOutputStream: void writeByte(int)> -> _SINK_
+<java.io.ObjectOutputStream: void writeBytes(java.lang.String)> -> _SINK_
+<java.io.ObjectOutputStream: void writeChar(int)> -> _SINK_
+<java.io.ObjectOutputStream: void writeChars(java.lang.String)> -> _SINK_
+<java.io.ObjectOutputStream: void writeDouble(double)> -> _SINK_
+<java.io.ObjectOutputStream: void writeFields()> -> _SINK_
+<java.io.ObjectOutputStream: void writeFloat(float)> -> _SINK_
+<java.io.ObjectOutputStream: void writeInt(int)> -> _SINK_
+<java.io.ObjectOutputStream: void writeLong(long)> -> _SINK_
+<java.io.ObjectOutputStream: void writeObject(java.lang.Object)> -> _SINK_
+<java.io.ObjectOutputStream: void writeShort(int)> -> _SINK_
+<java.io.ObjectOutputStream: void writeUnshared(java.lang.Object)> -> _SINK_
+<java.io.ObjectOutputStream: void writeUTF(java.lang.String)> -> _SINK_
+<java.io.ObjectOutputStream: void defaultWriteObject()> -> _SINK_
+<java.io.PipedOutputStream: void write(int)> -> _SINK_
+<java.io.PipedOutputStream: void write(byte[])> -> _SINK_
+<java.io.PipedOutputStream: void write(byte[],int,int)> -> _SINK_
+
+% Writer  WRITE
+<java.io.BufferedWriter: void write(int)> -> _SINK_
+<java.io.BufferedWriter: void write(java.lang.String)> -> _SINK_
+<java.io.BufferedWriter: void write(java.lang.String,int,int)> -> _SINK_
+<java.io.BufferedWriter: void write(char[])> -> _SINK_
+<java.io.BufferedWriter: void write(char[],int,int)> -> _SINK_
+<java.io.FileWriter: void write(int)> -> _SINK_
+<java.io.FileWriter: void write(java.lang.String)> -> _SINK_
+<java.io.FileWriter: void write(java.lang.String,int,int)> -> _SINK_
+<java.io.FileWriter: void write(char[])> -> _SINK_
+<java.io.FileWriter: void write(char[],int,int)> -> _SINK_
+<java.io.CharArrayWriter: void write(int)> -> _SINK_
+<java.io.CharArrayWriter: void write(java.lang.String)> -> _SINK_
+<java.io.CharArrayWriter: void write(java.lang.String,int,int)> -> _SINK_
+<java.io.CharArrayWriter: void write(char[])> -> _SINK_
+<java.io.CharArrayWriter: void write(char[],int,int)> -> _SINK_
+<java.io.CharArrayWriter: void writeTo(java.io.Writer)> -> _SINK_
+<java.io.OutputStreamWriter: void write(int)> -> _SINK_
+<java.io.OutputStreamWriter: void write(java.lang.String)> -> _SINK_
+<java.io.OutputStreamWriter: void write(java.lang.String,int,int)> -> _SINK_
+<java.io.OutputStreamWriter: void write(char[])> -> _SINK_
+<java.io.OutputStreamWriter: void write(char[],int,int)> -> _SINK_
+<java.io.PipedWriter: void write(int)> -> _SINK_
+<java.io.PipedWriter: void write(java.lang.String)> -> _SINK_
+<java.io.PipedWriter: void write(java.lang.String,int,int)> -> _SINK_
+<java.io.PipedWriter: void write(char[])> -> _SINK_
+<java.io.PipedWriter: void write(char[],int,int)> -> _SINK_
+<java.io.PrintWriter: void write(int)> -> _SINK_
+<java.io.PrintWriter: void write(java.lang.String)> -> _SINK_
+<java.io.PrintWriter: void write(java.lang.String,int,int)> -> _SINK_
+<java.io.PrintWriter: void write(char[])> -> _SINK_
+<java.io.PrintWriter: void write(char[],int,int)> -> _SINK_
+<java.io.StringWriter: void write(int)> -> _SINK_
+<java.io.StringWriter: void write(java.lang.String)> -> _SINK_
+<java.io.StringWriter: void write(java.lang.String,int,int)> -> _SINK_
+<java.io.StringWriter: void write(char[])> -> _SINK_
+<java.io.StringWriter: void write(char[],int,int)> -> _SINK_

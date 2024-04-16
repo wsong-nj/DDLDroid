@@ -1,0 +1,35 @@
+The app BetterCount for example:
+《布局属性》：<XXXLayout 属性声明> 布局内容，即一系列控件或者潜逃布局 </XXXLayout>
+1、<include layout="@layout/XXX">  需要进一步解析该布局文件里的控件
+
+以下两个目前看到在LinearLayout中
+2、app:layout_behavior="2131755038"
+    【实际上是@string/bottom_sheet_behavior，反编译解析出来会直接是string类型资源的id号。需要根据id查到资源名，再根据资源名查到资源的值】
+    或者直接显示声明  layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior" ；
+    CoordinatorLayout中子View的交互行为，可以在CoordinatorLayout的子类中实现一个或多个交互，这些交互可能是拖动，滑动，闪动或任何其他手势。
+    其实就是实现CoordinatorLayout内部控件的交互行为，可以在非侵入的方式实现相应的交互！开发中常用的就BottomSheetBehavior、SwipeDismissBehavior剩下的就是自定义了
+
+3、app:behavior_hideable="true"  ；是否能通过下滑手势收起
+
+
+《控件属性》：<控件类型   属性声明 />
+1、android:id="2131296556"
+    资源id号  【编码时候为@+id/xxx，+号表示没有则添加一个这样的id类型到R类里；同理，其他的string等等也是，如果没有+，则代表已经声明在了value/string.xml文件里】；
+
+2、android:name="org.kde.bettercounter.EntryFragment"
+    用此属性，显示声明要静态添加的Fragment类；
+
+3、tools:listitem="@layout/fragment_entry" 用来给RecyclerView类型和ListView类型的布局里的item项对应的布局； tools:itemCount="5"  指定item的数量；
+
+4、getTag()发现是一个完整类名，则是一个自定义控件/布局。在布局中引入这个自定义控件的时候便会调用它的构造方法；
+    自定义控件如果是继承一个控件则不需要绘制布局，如果是继承一个Layout，则需要在init函数中动态加载一个布局。
+
+5、TextView  android:freezesText ="false" 默认是false值，设置为true可自动保存。
+
+6、EditText  系统自动实现，除非复写onRestoreInstanceState(Bundle savedInstanceState)且不调用super.
+
+
+
+
+//////////////
+android:configChanges="orientation|keyboardHidden"

@@ -1,0 +1,493 @@
+<sinkSources>
+    <category id="NO_CATEGORY">
+        <method signature="&lt;com.example.androidtest.Sources: java.lang.String sourceTest(com.example.androidtest.MyTestObject,int)&gt;">
+            <base type="com.example.androidtest.Sources">
+                <accessPath isSource="false" isSink="true" />
+            </base>
+            <return type="java.lang.String">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="com.example.androidtest.MyTestObject">
+                <accessPath isSource="false" isSink="true">
+                    <pathElement type="SomeClassA" field="c" />
+                    <pathElement type="java.lang.String" field="s" />
+                </accessPath>
+                <accessPath isSource="true" isSink="false">
+                    <pathElement type="SomeClassB" field="d" />
+                </accessPath>
+            </param>
+            <param index="1" type="int">
+                <accessPath isSource="true" isSink="false" />
+            </param>
+        </method>
+
+        <!--20-->
+        <method signature="&lt;java.io.BufferedInputStream: int read(byte[])&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="byte[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.BufferedInputStream: int read(byte[],int,int)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="byte[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.DataInputStream: int read(byte[])&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="byte[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.DataInputStream: int read(byte[],int,int)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="byte[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.DataInputStream: void readFully(byte[])&gt;">
+            <param index="0" type="byte[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.DataInputStream: void readFully(byte[],int,int)&gt;">
+            <param index="0" type="byte[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.FileInputStream: int read(byte[])&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="byte[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.FileInputStream: int read(byte[],int,int)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="byte[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.ByteArrayInputStream: int read(byte[])&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="byte[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.ByteArrayInputStream: int read(byte[],int,int)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="byte[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.ObjectInputStream: int read(byte[])&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="byte[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.ObjectInputStream: int read(byte[],int,int)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="byte[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.ObjectInputStream: void readFully(byte[])&gt;">
+            <param index="0" type="byte[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.ObjectInputStream: void readFully(byte[],int,int)&gt;">
+            <param index="0" type="byte[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.PipedInputStream: int read(byte[])&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="byte[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.PipedInputStream: int read(byte[],int,int)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="byte[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.PushbackInputStream: int read(byte[])&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="byte[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.PushbackInputStream: int read(byte[],int,int)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="byte[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.SequenceInputStream: int read(byte[])&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="byte[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.SequenceInputStream: int read(byte[],int,int)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="byte[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+
+        <!--27-->
+        <method signature="&lt;java.io.FileReader: int read(char[])&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="char[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.FileReader: int read(char[],int,int)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="char[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.FileReader: int read(java.nio.CharBuffer)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="java.nio.CharBuffer">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.BufferedReader: int read(char[])&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="char[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.BufferedReader: int read(char[],int,int)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="char[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.BufferedReader: int read(java.nio.CharBuffer)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="java.nio.CharBuffer">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.CharArrayReader: int read(char[])&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="char[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.CharArrayReader: int read(char[],int,int)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="char[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.CharArrayReader: int read(java.nio.CharBuffer)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="java.nio.CharBuffer">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.FileReader: int read(char[])&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="char[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.FileReader: int read(char[],int,int)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="char[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.FileReader: int read(java.nio.CharBuffer)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="java.nio.CharBuffer">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.InputStreamReader: int read(char[])&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="char[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.InputStreamReader: int read(char[],int,int)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="char[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.InputStreamReader: int read(java.nio.CharBuffer)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="java.nio.CharBuffer">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.LineNumberReader: int read(char[])&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="char[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.LineNumberReader: int read(char[],int,int)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="char[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.LineNumberReader: int read(java.nio.CharBuffer)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="java.nio.CharBuffer">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.PipedReader: int read(char[])&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="char[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.PipedReader: int read(char[],int,int)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="char[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.PipedReader: int read(java.nio.CharBuffer)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="java.nio.CharBuffer">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.PushbackReader: int read(char[])&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="char[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.PushbackReader: int read(char[],int,int)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="char[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.PushbackReader: int read(java.nio.CharBuffer)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="java.nio.CharBuffer">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.StringReader: int read(char[])&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="char[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.StringReader: int read(char[],int,int)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="char[]">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;java.io.StringReader: int read(java.nio.CharBuffer)&gt;">
+            <return type="int">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="java.nio.CharBuffer">
+                <accessPath isSource="true" isSink="false">
+                </accessPath>
+            </param>
+        </method>
+    </category>
+</sinkSources>
+
+        <!--
+        % IntputStream READ
+        % <java.io.BufferedInputStream: int read(byte[])> -> _SOURCE_
+        % <java.io.BufferedInputStream: int read(byte[],int,int)> -> _SOURCE_
+        % <java.io.DataInputStream: int read(byte[])> -> _SOURCE_
+        % <java.io.DataInputStream: int read(byte[],int,int)> -> _SOURCE_
+        % <java.io.DataInputStream: void readFully(byte[])> -> _SOURCE_
+        % <java.io.DataInputStream: void readFully(byte[],int,int)> -> _SOURCE_
+        % <java.io.FileInputStream: int read(byte[])> -> _SOURCE_
+        % <java.io.FileInputStream: int read(byte[],int,int)> -> _SOURCE_
+        % <java.io.ByteArrayInputStream: int read(byte[])> -> _SOURCE_
+        % <java.io.ByteArrayInputStream: int read(byte[],int,int)> -> _SOURCE_
+        % <java.io.ObjectInputStream: int read(byte[])> -> _SOURCE_
+        % <java.io.ObjectInputStream: int read(byte[],int,int)> -> _SOURCE_
+        % <java.io.ObjectInputStream: void readFully(byte[])> -> _SOURCE_
+        % <java.io.ObjectInputStream: void readFully(byte[],int,int)> -> _SOURCE_
+        % <java.io.PipedInputStream: int read(byte[])> -> _SOURCE_
+        % <java.io.PipedInputStream: int read(byte[],int,int)> -> _SOURCE_
+        % <java.io.PushbackInputStream: int read(byte[])> -> _SOURCE_
+        % <java.io.PushbackInputStream: int read(byte[],int,int)> -> _SOURCE_
+        % <java.io.SequenceInputStream: int read(byte[])> -> _SOURCE_
+        % <java.io.SequenceInputStream: int read(byte[],int,int)> -> _SOURCE_
+        -->
+        <!--
+        % Reader  READ
+        % <java.io.FileReader: int read(char[])> -> _SOURCE_
+        % <java.io.FileReader: int read(char[],int,int)> -> _SOURCE_
+        % <java.io.FileReader: int read(java.nio.CharBuffer)> -> _SOURCE_
+        % <java.io.BufferedReader: int read(char[])> -> _SOURCE_
+        % <java.io.BufferedReader: int read(char[],int,int)> -> _SOURCE_
+        % <java.io.BufferedReader: int read(java.nio.CharBuffer)> -> _SOURCE_
+        % <java.io.CharArrayReader: int read(char[])> -> _SOURCE_
+        % <java.io.CharArrayReader: int read(char[],int,int)> -> _SOURCE_
+        % <java.io.CharArrayReader: int read(java.nio.CharBuffer)> -> _SOURCE_
+        % <java.io.FileReader: int read(char[])> -> _SOURCE_
+        % <java.io.FileReader: int read(char[],int,int)> -> _SOURCE_
+        % <java.io.FileReader: int read(java.nio.CharBuffer)> -> _SOURCE_
+        % <java.io.InputStreamReader: int read(char[])> -> _SOURCE_
+        % <java.io.InputStreamReader: int read(char[],int,int)> -> _SOURCE_
+        % <java.io.InputStreamReader: int read(java.nio.CharBuffer)> -> _SOURCE_
+        % <java.io.LineNumberReader: int read(char[])> -> _SOURCE_
+        % <java.io.LineNumberReader: int read(char[],int,int)> -> _SOURCE_
+        % <java.io.LineNumberReader: int read(java.nio.CharBuffer)> -> _SOURCE_
+        % <java.io.PipedReader: int read(char[])> -> _SOURCE_
+        % <java.io.PipedReader: int read(char[],int,int)> -> _SOURCE_
+        % <java.io.PipedReader: int read(java.nio.CharBuffer)> -> _SOURCE_
+        % <java.io.PushbackReader: int read(char[])> -> _SOURCE_
+        % <java.io.PushbackReader: int read(char[],int,int)> -> _SOURCE_
+        % <java.io.PushbackReader: int read(java.nio.CharBuffer)> -> _SOURCE_
+        % <java.io.StringReader: int read(char[])> -> _SOURCE_
+        % <java.io.StringReader: int read(char[],int,int)> -> _SOURCE_
+        % <java.io.StringReader: int read(java.nio.CharBuffer)> -> _SOURCE_
+        -->
